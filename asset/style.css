@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.favicon{
+    width: 12px;
+}
+.cuerpo{
+    background-color:#ffe9da ;
+}
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 43rem;
+}
+@media (max-width: 992px){
+    .slide img{
+        height: 38rem;
+    }
+}
+@media (max-width: 768px){
+    .slide img{
+        height: 35rem;
+    }
+}
+@media (max-width: 576px){
+    .slide img{
+        height: 28rem;
+    }
+}
+@media (max-width: 390px){
+    .slide img{
+        height: 25rem;
+    }
+}
+
