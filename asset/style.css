@@ -17,6 +17,79 @@
 .slide img{
     height: 43rem;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul{
+    position: relative;
+    transform: skewY(-13deg);
+}
+.menu ul li{
+    list-style: none;
+    position: relative;
+    width: 200px;
+    background-color: #d4927c;
+    padding: 25px;
+    z-index: var(--i);
+    transition: 0,5s;
+    border-bottom: 2px solid white;
+}
+.menu ul li:hover{
+    background-color: #ffe9da;
+    transform: translateX(20px);
+}
+.menu ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 100%;
+    background-color:  #C78873;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0,5s;
+}
+.menu ul li:hover::before{
+    background-color: #ffe9da;
+}
+.menu ul li::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #C78873;
+    transform-origin: bottom;
+    transform: skewx(45deg);
+    transition: 0,5s;
+}
+.menu ul li:hover::after{
+    background-color: #C78873;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.menu ul li:last-child::after{
+    box-shadow: -12opx 120px 20px rgba( 0, 0, 0, 0.25);
+}
+.menu ul li:nth-child(1){
+    transform: none;
+    color: white;
+    background-color: #d4927c;
+}
+.menu ul li:nth-child(1)::before{
+    background-color: #C78873;
+}
+
+
 @media (max-width: 992px){
     .slide img{
         height: 38rem;
@@ -25,6 +98,9 @@
 @media (max-width: 768px){
     .slide img{
         height: 35rem;
+    }
+    .menu{
+        display: none;
     }
 }
 @media (max-width: 576px){
