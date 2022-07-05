@@ -1,0 +1,51 @@
+.form-label{
+    color: $colorLetra;
+}
+.form-control{
+    background-color: #d4927c;
+    &::placeholder{
+        color: white;
+    }
+}
+.invalid-feedback{
+    color: $colorLetra;
+}
+.linea{
+    color: $colorLetra;
+}
+.btn-primary{
+    background-color: #c78873;
+    border: none;
+    &:hover{
+        background-color: $colorLetra
+    }
+}
+.text{
+    color: $colorLetra;
+}
+.badge{
+    background-color: $colorLetra;
+    color: white;
+}
+.list-group-item{
+    background-color: #d4927c;
+    color: white;
+}
+.total{
+    color: $colorLetra ;
+}
+.monto{
+    color: $colorLetra;
+}
+.h4{
+    color: $colorLetra;
+}
+.form-check-label{
+    color: $colorLetra;
+}
+.form-check-input{
+    &:active{
+        background-color: $colorLetra;
+    }
+}
+

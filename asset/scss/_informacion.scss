@@ -1,0 +1,14 @@
+.list-group-item-action{
+    &:hover{
+        background-color: $colorLetra;
+        color: white;
+    }
+}
+.card-body{
+    background-color: #ffe9da;
+    border: 5px solid $colorLetra;
+    border-radius: 5px;
+    h5{
+        color: $colorLetra;
+    }
+}

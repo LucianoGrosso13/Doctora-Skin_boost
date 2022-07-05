@@ -1,0 +1,135 @@
+.favicon{
+    width: 12px;
+}
+.cuerpo{
+    background-color:#ffe9da ;
+}
+.slide{
+    margin-top: 10px;
+    img{
+        height: 43rem;
+    }
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+        position: relative;
+        transform: skewY(-13deg);
+        li{
+            list-style: none;
+            position: relative;
+            width: 200px;
+            background-color: #d4927c;
+            padding: 25px;
+            z-index: var(--i);
+            transition: 0,5s;
+            border-bottom: 2px solid white;
+            &:hover{
+                background-color: #ffe9da;
+                transform: translateX(20px);
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -50px;
+                width: 50px;
+                height: 100%;
+                background-color:  #C78873;
+                transform-origin: right;
+                transform: skewY(45deg);
+                transition: 0,5s;
+            }
+            &:hover::before{
+                background-color: #ffe9da;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: 0px;
+                width: 100%;
+                height: 50px;
+                background-color: #C78873;
+                transform-origin: bottom;
+                transform: skewx(45deg);
+                transition: 0,5s;
+            }
+            &:hover::after{
+                background-color: #C78873;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                text-transform: uppercase;
+                transition: 0.5s;
+            }
+            &:nth-child(1){
+                color:white;
+                background-color: #d4927c;
+                transform: none;
+            }
+            &:nth-child(1)::before{
+                background-color: #C78873;
+            }
+        }
+    }
+}
+.nav-item{
+    a{
+        color: $colorLetra;
+    }
+}
+.dropdown-item{
+    background-color: #ffe9da;
+}
+.header{
+    h1{
+        color:$colorLetra
+    }
+    h2{
+        color:$colorLetra
+    }
+}
+.main{
+    h2{
+        color:$colorLetra
+    }
+    p{
+        color:$colorLetra
+    }
+}
+.footer{
+    span{
+        color:$colorLetra
+    }
+    a{
+        color:$colorLetra
+    }
+}
+@media (max-width: 992px){
+    .slide img{
+        height: 38rem;
+    }
+}
+@media (max-width: 768px){
+    .slide img{
+        height: 35rem;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media (max-width: 576px){
+    .slide img{
+        height: 28rem;
+    }
+}
+@media (max-width: 390px){
+    .slide img{
+        height: 25rem;
+    }
+}
