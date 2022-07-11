@@ -2,7 +2,7 @@
     color: $colorLetra;
 }
 .form-control{
-    background-color: #d4927c;
+    background-color: $colorForm;
     &::placeholder{
         color: white;
     }
@@ -13,9 +13,15 @@
 .linea{
     color: $colorLetra;
 }
+
+@mixin propiedades($colorFondo, $borde, $colorLetra ) {
+    background-color: $colorFondo;
+    border: $borde;
+    color: $colorLetra;
+}
+
 .btn-primary{
-    background-color: #c78873;
-    border: none;
+    @include propiedades($colorBtn,none,white );
     &:hover{
         background-color: $colorLetra
     }
@@ -23,13 +29,18 @@
 .text{
     color: $colorLetra;
 }
+$estilos:(
+    background-color: $colorForm,
+    color: white,
+);
+
 .badge{
-    background-color: $colorLetra;
-    color: white;
+    background-color: map-get($estilos, background-color );
+    color: map-get($estilos, color );
 }
 .list-group-item{
-    background-color: #d4927c;
-    color: white;
+    background-color: map-get($estilos, background-color );
+    color: map-get($estilos, color );
 }
 .total{
     color: $colorLetra ;

@@ -1,9 +1,11 @@
+@import "turnos y compras";
 .h3{
     color: $colorLetra;
 }
-.btn-primary{
+.btn-secondary{
+    @extend .btn-primary ;
     color: white;
 }
 .accordion-collapse{
-    background-color: #ffe9da;
+    background-color: $colorFondo;
 }

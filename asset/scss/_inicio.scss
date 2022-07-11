@@ -2,7 +2,7 @@
     width: 12px;
 }
 .cuerpo{
-    background-color:#ffe9da ;
+    background-color: $colorFondo ;
 }
 .slide{
     margin-top: 10px;
@@ -84,7 +84,7 @@
     }
 }
 .dropdown-item{
-    background-color: #ffe9da;
+    background-color: $colorFondo;
 }
 .header{
     h1{
