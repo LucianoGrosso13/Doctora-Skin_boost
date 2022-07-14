@@ -132,6 +132,20 @@
 
 .nav-item a {
   color: #D45F55; }
+  .navbar{
+    background-image: linear-gradient(
+    180deg,
+    hsl(15deg 51% 66%) 0%,
+    hsl(16deg 52% 69%) 0%,
+    hsl(17deg 54% 71%) 0%,
+    hsl(18deg 56% 74%) 0%,
+    hsl(20deg 59% 77%) 2%,
+    hsl(21deg 62% 80%) 6%,
+    hsl(22deg 66% 83%) 21%,
+    hsl(22deg 72% 86%) 65%,
+    hsl(23deg 82% 89%) 86%,
+    hsl(24deg 100% 93%) 100%
+  );}
 
 .dropdown-item {
   background-color: #ffe9da; }
