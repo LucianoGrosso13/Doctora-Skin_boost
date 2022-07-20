@@ -1,14 +1,18 @@
 .form-label{
     color: $colorLetra;
+    font-family: $letra;
 }
 .form-control{
     background-color: $colorForm;
+    font-family: $letra;
     &::placeholder{
         color: white;
+        font-family: $letra;
     }
 }
 .invalid-feedback{
     color: $colorLetra;
+    font-family: $letra;
 }
 .linea{
     color: $colorLetra;
@@ -22,12 +26,14 @@
 
 .btn-primary{
     @include propiedades($colorBtn,none,white );
+    font-family: $letra;
     &:hover{
-        background-color: $colorLetra
+        background-color: $colorLetra;
     }
 }
 .text{
     color: $colorLetra;
+    font-family: $letra;
 }
 $estilos:(
     background-color: $colorForm,
@@ -37,26 +43,34 @@ $estilos:(
 .badge{
     background-color: map-get($estilos, background-color );
     color: map-get($estilos, color );
+    font-family: $letra;
 }
 .list-group-item{
     background-color: map-get($estilos, background-color );
     color: map-get($estilos, color );
+    font-family: $letra;
 }
 .total{
     color: $colorLetra ;
+    font-family: $letra;
 }
 .monto{
     color: $colorLetra;
+    font-family: $letra;
 }
 .h4{
     color: $colorLetra;
+    font-family: $letra;
 }
 .form-check-label{
     color: $colorLetra;
+    font-family: $letra;
+
 }
 .form-check-input{
     &:active{
         background-color: $colorLetra;
+        font-family: $letra;
     }
 }
 
