@@ -192,25 +192,25 @@
 .footer a {
   color: #D45F55;
   font-family: "Montserrat"; }
-
-@media (max-width: 992px) {
-  .slide img {
-    height: 38rem; } }
-
-@media (max-width: 768px) {
-  .slide img {
-    height: 35rem; }
-  .menu {
-    display: none; } }
-
-@media (max-width: 576px) {
-  .slide img {
-    height: 28rem; } }
-
-@media (max-width: 390px) {
-  .slide img {
-    height: 25rem; } }
-
+  
+  @media (max-width: 992px) {
+    .slide img {
+      height: 38rem; } }
+  
+  @media (max-width: 768px) {
+    .slide img {
+      height: 35rem; }
+    .menu {
+      display: none; } }
+  
+  @media (max-width: 576px) {
+    .slide img {
+      height: 28rem; } }
+  
+  @media (max-width: 390px) {
+    .slide img {
+      height: 25rem; } }
+  
 .form-label {
   color: #D45F55;
   font-family: "Montserrat"; }
